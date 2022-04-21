@@ -1,0 +1,16 @@
+package ajayintro;
+
+public class Multiplication {
+
+	public static void main(String[] args) {
+		int a=5;
+		int i=1;
+		int res;
+		while(i<=10)
+		{
+			res=a*i;
+			i++;
+			System.out.println(a+"*"+i+"="+res);
+		}
+	}
+}

@@ -1,0 +1,30 @@
+package ajayintro;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class makemytrip {
+	public static void main(String[] args) throws InterruptedException
+	{
+ System.setProperty("webdriver.chrome.driver","G:\\chromedriver.exe");
+ WebDriver driver=new ChromeDriver();
+ driver.get("https://www.makemytrip.com/visa/");
+ //WebElement staticdropdown=driver.findElement(By.cssSelector("span[class='latoBold capText font11'] span:nth-child(1)"));//
+// Select dropdown=new Select(staticdropdown);
+ //dropdown.selectByIndex(1);
+ //driver.findElement(By.cssSelector("span[class='latoBold capText font11'] span:nth-child(1)")).click();
+ driver.findElement(By.xpath("//span[@class=\"chNavIcon appendBottom2 chSprite chFlights active\"]")).click();
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+}
+}

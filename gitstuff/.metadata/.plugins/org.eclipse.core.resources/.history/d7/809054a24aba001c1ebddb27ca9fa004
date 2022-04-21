@@ -1,0 +1,14 @@
+package ajayintro;
+
+import java.util.stream.Stream;
+
+public class Fliter {
+
+	public static void main(String[] args) {
+		int count=0;
+		
+		Stream.of("ajay","rajesh","singh","aman").filter(s->s.startsWith("a")).count();
+
+	}
+
+}

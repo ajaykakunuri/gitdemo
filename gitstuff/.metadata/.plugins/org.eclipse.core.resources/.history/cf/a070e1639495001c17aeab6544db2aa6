@@ -1,0 +1,34 @@
+package ajayintro;
+
+import java.util.Scanner;
+
+public class Switchcase {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("input1");
+		System.out.println("input2:");
+		int n1=sc.nextInt();
+		int n2=sc.nextInt();
+		char oper=sc.next().charAt(0);
+		int n;
+		switch(oper)
+		{
+		case 1:
+			n=n1+n2;
+			System.out.println(n);
+			break;
+		case 2:
+			n=n1-n2;
+			System.out.println(n);
+			break;
+			
+			
+			
+		}
+		
+		
+
+	}
+
+}

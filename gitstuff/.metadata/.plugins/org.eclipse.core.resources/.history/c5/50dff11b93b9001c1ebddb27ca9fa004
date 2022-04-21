@@ -1,0 +1,34 @@
+package ajayintro;
+
+
+import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.net.URLConnection;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Openconnection {
+
+	public static void main(String[] args) throws IOException {
+		System.setProperty("webdriver.chrome.driver", "G:\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.manage().deleteAllCookies();
+        driver.get("https://www.bigbasket.com/");
+       /* String abc=driver.findElement(By.cssSelector()
+       URL xyz=new URL(abc);
+       HttpURLConnection conn=(HttpURLConnection) xyz.openConnection();
+       conn.setRequestMethod("HEAD");
+       conn.connect();
+       int rescode=conn.getResponseCode();
+       System.out.println(rescode);*/
+       
+
+	}
+
+}

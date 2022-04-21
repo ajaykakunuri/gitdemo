@@ -1,0 +1,19 @@
+package com.ajay;
+
+import java.util.Scanner;
+
+public class Factorial {
+
+	public static void main(String[] args) {
+	 Scanner sc=new Scanner(System.in);
+	 System.out.println("input:");
+	 int n=sc.nextInt();
+	 while(n>0)
+	 {
+		 n=n*(n-1);
+		 n--;
+	 }
+System.out.println(n);
+	}
+
+}

@@ -1,0 +1,21 @@
+package ajayintro;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class RowsColumns {
+
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver", "G:\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.get("https://rahulshettyacademy.com/AutomationPractice/");
+        driver.findElement(By.xpath("//table[@id=\"product\"]"));
+       System.out.println(driver.findElements(By.cssSelector("table[name='courses'] tr")).size());
+       System.out.println(driver.findElements(By.cssSelector("table[name='courses'] th")).size());
+       System.out.println(driver.findElement(By.cssSelector("body > div:nth-child(5) > div:nth-child(1) > fieldset:nth-child(1) > table:nth-child(2) > tbody:nth-child(1) > tr:nth-child(3)")));
+
+	}
+
+}
